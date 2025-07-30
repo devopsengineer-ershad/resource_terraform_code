@@ -7,13 +7,13 @@ terraform {
     }
   }
 
-    # backend "azurerm" {
+    backend "azurerm" {
 
-    #   resource_group_name  = "RG-ershad"
-    #   storage_account_name = "ershadstorage"
-    #   container_name       = "ershadblob"
-    #   key                  = "ershad.terraform.tfstate"
-    # }
+      resource_group_name  = "rg-ershad"
+      storage_account_name = "pipestorage123"
+      container_name       = "pipecontainer"
+      key                  = "pipe.terraform.tfstate"
+    }
   }
 
 
